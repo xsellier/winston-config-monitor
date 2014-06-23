@@ -58,6 +58,10 @@ All of the winston tests are written with mocha/chai/spy.
 ```
 
 ## Changelog
+0.1.1
+
+ - Fix an issue with [fs.watch](see: https://github.com/joyent/node/search?q=issues+fs.watch+twice&ref=cmdform&type=Issues)
+
 0.1.0
 
 - First release

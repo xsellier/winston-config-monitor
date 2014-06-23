@@ -37,18 +37,15 @@ describe("The winston-config-monitor", function() {
       fs.writeFile(configFile, JSON.stringify(fileContent, null, 2), function(err) {
         expect(err).to.not.exist;
 
-        // 4 times because there is many steps when we write a whole file with node fs.
-        // And we count the 2 adds from the beginning.
-        expect(spyLoggerAdd).to.have.been.called.exactly(6);
-        expect(spyLoggerRemove).to.have.been.called.exactly(4);
+        expect(spyLoggerAdd).to.have.been.called.exactly(2);
+        expect(spyLoggerRemove).to.have.been.called.exactly(0);
 
         setTimeout(function() {
           fileContent.loggersOptions.console.level = "info";
           fs.writeFile(configFile, JSON.stringify(fileContent, null, 2), function(err) {
 
-            // 2 + 4 + 4 = 10, and 4 + 4 = 8 for remove
-            expect(spyLoggerAdd).to.have.been.called.exactly(10);
-            expect(spyLoggerRemove).to.have.been.called.exactly(8);
+            expect(spyLoggerAdd).to.have.been.called.exactly(4);
+            expect(spyLoggerRemove).to.have.been.called.exactly(2);
 
             expect(fs.existsSync(fileContent.loggersOptions.file.filename)).to.be.true;
             fs.unlinkSync(fileContent.loggersOptions.file.filename);
