@@ -17,6 +17,7 @@ winston-config-monitor can be used like described below:
     , winstonConfMonitor = require('winston-config-monitor');
 
     var configFile       = "path/to/your/winston-options.json";
+    var logger           = winstonConfMonitor.getLogger();
 
     winstonConfigMonitor.add(logger.transports.Console, configFile, "loggersOptions.console");
     winstonConfigMonitor.add(logger.transports.File, configFile, "loggersOptions.file");
