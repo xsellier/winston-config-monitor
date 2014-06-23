@@ -1,4 +1,4 @@
-# winston-config-monitor [![Build Status](https://travis-ci.org/binogure/winston-config-monitor.png?branch=master)](http://travis-ci.org/binogure/winston-config-monitor)
+# winston-config-monitor [![Build Status](https://travis-ci.org/xsellier/winston-config-monitor.svg?branch=master)](https://travis-ci.org/xsellier/winston-config-monitor)
 
 ## Motivation
 [winston](https://github.com/flatiron/winston) is designed to be a simple and universal logging library with support for multiple transports.
@@ -42,3 +42,24 @@ winston-options.json should be defines as below:
   }
 }
 ```
+
+## Installation
+
+### Installing winston-config-monitor
+```
+  [sudo] npm install winston-config-monitor
+```
+
+## Run Tests
+All of the winston tests are written with mocha/chai/spy.
+
+``` bash
+  $ npm test
+```
+
+## Changelog
+0.1.0
+
+- First release
+
+#### Author: [Xavier Sellier](http://github.com/xsellier)
