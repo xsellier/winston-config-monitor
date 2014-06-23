@@ -62,5 +62,3 @@ All of the winston tests are written with mocha/chai/spy.
 0.1.0
 
 - First release
-
-#### Author: [Xavier Sellier](http://github.com/xsellier)
