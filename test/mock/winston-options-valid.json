@@ -1,0 +1,20 @@
+{
+  "loggersOptions": {
+    "console": {
+      "level": "info",
+      "colorize": true,
+      "timestamp": true,
+      "handleExceptions": false,
+      "prettyPrint": true
+    },
+    "file": {
+      "level": "info",
+      "colorize": false,
+      "filename": "test/test-valid.log",
+      "maxsize": 1048576,
+      "maxFile": 5,
+      "json": false,
+      "handleExceptions": true
+    }
+  }
+}
