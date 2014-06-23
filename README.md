@@ -47,7 +47,7 @@ winston-options.json should be defines as below:
 
 ### Installing winston-config-monitor
 ```
-  [sudo] npm install winston-config-monitor
+  npm install winston-config-monitor --save
 ```
 
 ## Run Tests
