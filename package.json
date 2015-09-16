@@ -1,6 +1,6 @@
 {
   "name": "winston-config-monitor",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": " A helper to easily configure winston with monitoring.",
   "main": "lib/winston-config-monitor.js",
   "scripts": {

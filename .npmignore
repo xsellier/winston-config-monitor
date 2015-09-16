@@ -1,0 +1,13 @@
+# Ignore unused directories
+/config
+/node_modules
+/logs
+/test
+/.git
+
+# ignore test files
+.travis.yml
+winston-options.json
+gulpfile.js
+.eslintrc
+.gitignore

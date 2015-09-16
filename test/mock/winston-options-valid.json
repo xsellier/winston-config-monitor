@@ -1,20 +1,16 @@
 {
   "loggersOptions": {
-    "console": {
+    "Console": {
       "level": "info",
-      "colorize": true,
-      "timestamp": true,
-      "handleExceptions": false,
-      "prettyPrint": true
+      "colorize": true
     },
-    "file": {
-      "level": "info",
-      "colorize": false,
-      "filename": "test/test-valid.log",
-      "maxsize": 1048576,
-      "maxFile": 5,
+    "File": {
+      "timestamp": true,
       "json": false,
-      "handleExceptions": true
+      "filename": "logs/app.log",
+      "maxFile": 5,
+      "maxsize": 10485760,
+      "level": "info"
     }
   }
 }
